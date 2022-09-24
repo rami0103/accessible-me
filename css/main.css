@@ -57,10 +57,9 @@ nav ul li a:hover, .skip-link:hover {
 }
 
 /* Added a focus state so users on a keyboard can access by using tab key */
-nav ul li a:focus, .skip-link:focus {
-  outline: 4px solid black;
+nav ul li a:focus, .skip-link:focus, form button:focus {
+  outline: 2px solid black;
 }
-
 
 form input,
 form textarea {
@@ -78,12 +77,14 @@ form textarea {
 }
 
 form button {
-  background: none;
+  background: black;
+  color: antiquewhite;
+  font-size: 1rem;
   border: 2px solid black;
-  padding: 1rem;
-  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0 2rem 0;
 }
 
-.site-footer {
-  padding: 2rem 0;
+footer {
+  margin: 4rem 0 2rem 0;
 }
