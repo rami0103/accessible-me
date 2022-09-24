@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   margin: 0;
+  /* Removed the gray background for better contrast of text */
   padding: 0;
 }
 
@@ -11,6 +12,7 @@ h4,
 h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  padding-top: 1.3rem;
 }
 
 .container {
@@ -34,6 +36,7 @@ nav ul {
 nav ul li {
   flex: 1;
   text-align: center;
+  margin: 1rem 0;
 }
 
 nav ul li a {
@@ -42,6 +45,22 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.25rem;
 }
+
+.skip-link {
+  text-decoration: underline;
+  color: inherit;
+  padding: 2rem 0;
+}
+
+nav ul li a:hover, .skip-link:hover {
+  color: green;
+}
+
+/* Added a focus state so users on a keyboard can access by using tab key */
+nav ul li a:focus, .skip-link:focus {
+  outline: 4px solid black;
+}
+
 
 form input,
 form textarea {
