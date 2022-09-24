@@ -37,20 +37,20 @@
       <a href="#top" class="skip-link" aria-label="Go to top, from welcome section">Go back to top</a>
       <div class="owner">
         <h1>Meet the owner</h1>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person"> <!-- Added SCHEMA-->
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email"><a href="mailto:johnjoe@jambox.ca">Email: johnjoe@jambox.ca</a></li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
       <!-- Added a skip link to top and ARIA label -->
       <a href="#top" class="skip-link" aria-label="Go to top, from meet the owner section">Go back to top</a>         
-        <h1>Address</h1>
+        <h1 itemscope itemtype="https://schema.org/PostalAddress">Address</h1>
         <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+          <span> Jambox Studios</span>
+          <span itemprop="streetAddress">123 Guitar Road,</span>
+          <span itemprop="addressLocality">Musicville, Danceistan</span>
+          <span itemprop="postalCode">B3T 0L0</span>
         </p>
       <!-- Added a skip link to top -->
       <a href="#top" class="skip-link" aria-label="Go to top, from address section">Go back to top</a>     
