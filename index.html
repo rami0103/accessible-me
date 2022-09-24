@@ -15,10 +15,10 @@
 <body>
   <div class="container">
     <!-- Changed the HTML semantic to header -->
-    <header id="top">
-      <h1>Jam Box Studios</h1>
+    <header id="top" role="banner"> <!-- Added ARIA role-->
+      <h1 role="heading">Jam Box Studios</h1>
       <!-- Changed the HTML semantic to nav -->
-      <nav>
+      <nav> 
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -56,7 +56,7 @@
       <a href="#top" class="skip-link">Go back to top</a>     
       </div>
       <!-- Changed the HTML semantic to section -->
-      <section>
+      <section role="form"> <!-- Added ARIA role-->
         <h2>Contact Us</h2>
         <form action="thanks.html">
           <!-- Added labels and more details on input type -->
@@ -78,7 +78,7 @@
       </section>
     </main>
     <!-- Changed the HTML semantic to footer -->
-    <footer>
+    <footer role="contentinfo"> <!-- Added ARIA role-->
       &copy; 2021 Jam Box Studios
     </footer>
   </div>
