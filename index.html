@@ -59,13 +59,17 @@
       <section>
         <h2>Contact Us</h2>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <!-- REMINDER: double check textarea -->
-          <textarea></textarea>
+          <label for="yourname">Full Name</label>
+          <input type="text" id="yourname" name="yourname" placeholder="Full Name">
+          
+          <label for="youremail">Email</label>
+          <input type="email" id="youremail" name="youremail" placeholder="Email">          
+
+          <label for="yoursubject">Subject</label>
+          <input type="text" id="yoursubject" name="yoursubject" placeholder="Subject">
+
+          <label for="yourmessage">Message</label>
+          <textarea id="yourmessage" name="yourmessage"></textarea>
           <button type="submit">Send</button>
         </form>
       <!-- Added a skip link to top -->
