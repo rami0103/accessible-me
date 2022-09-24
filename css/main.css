@@ -44,16 +44,18 @@ nav ul li a {
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
+  transition: ease-in-out 0.2s;
 }
 
 .skip-link {
   text-decoration: underline;
-  color: inherit;
+  color: blue;
   padding: 2rem 0;
 }
 
-nav ul li a:hover, .skip-link:hover {
-  color: green;
+nav ul li a:hover {
+  background: black;
+  color: antiquewhite;
 }
 
 /* Added a focus state so users on a keyboard can access by using tab key */
