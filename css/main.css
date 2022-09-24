@@ -83,6 +83,14 @@ form button {
   border: 2px solid black;
   padding: 0.5rem 1rem;
   margin: 0.5rem 0 2rem 0;
+  transition: ease-in-out 0.2s;
+}
+
+/* Adds user micro interaction on hover for a better user experience */
+form button:hover {
+  background: antiquewhite;
+  color: black;
+  border: 2px solid black;
 }
 
 footer {
