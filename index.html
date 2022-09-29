@@ -20,10 +20,10 @@
       <!-- Changed the HTML semantic to nav -->
       <nav> 
         <ul>
-          <li><a href="#" aria-label="Home button">Home</a></li> <!-- Added ARIA label -->
-          <li><a href="#" aria-label="Products button">Products</a></li>  <!-- Added ARIA label -->
-          <li><a href="#" aria-label="Reservations button">Reservation</a></li>  <!-- Added ARIA label -->
-          <li><a href="#" aria-label="Studio button">Studio</a></li>  <!-- Added ARIA label -->
+          <li><a href="" aria-label="Home button">Home</a></li> <!-- Added ARIA label -->
+          <li><a href="#meet-owner" aria-label="Owner button">Owner</a></li>  <!-- Added ARIA label -->
+          <li><a href="#location" aria-label="Address button">Location</a></li>  <!-- Added ARIA label -->
+          <li><a href="#contact" aria-label="Contact us button">Contact Us</a></li>  <!-- Added ARIA label -->
         </ul>
       </nav>
       <img src="https://placekitten.com/1200/900" alt="Image of a cat" class="banner">
@@ -35,7 +35,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <!-- Added a skip link to top and ARIA label-->
       <a href="#top" class="skip-link" aria-label="Go to top, from welcome section">Go back to top</a>
-      <div class="owner">
+      <div class="owner" id="meet-owner">
         <h1>Meet the owner</h1>
         <ul itemscope itemtype="https://schema.org/Person"> <!-- Added SCHEMA-->
           <li itemprop="name">Name: John Doe</li>
@@ -45,7 +45,7 @@
         </ul>
       <!-- Added a skip link to top and ARIA label -->
       <a href="#top" class="skip-link" aria-label="Go to top, from meet the owner section">Go back to top</a>         
-        <h1>Address</h1>
+        <h1 id="location">Address</h1>
         <p itemscope itemtype="https://schema.org/PostalAddress" >
           <span> Jambox Studios</span>
           <span itemprop="streetAddress">123 Guitar Road,</span>
@@ -57,7 +57,7 @@
       </div>
       <!-- Changed the HTML semantic to section -->
       <section>
-        <h2>Contact Us</h2>
+        <h2 id="contact">Contact Us</h2>
         <form action="thanks.html">
           <!-- Added labels and more details on input type -->
           <label for="yourname">Full Name</label>
